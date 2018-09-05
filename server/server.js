@@ -13,7 +13,7 @@ app.use(parser.json());
 MongoClient.connect('mongodb://localhost:27017')
   .then((client) => {
     const db = client.db('bucket_list');
-    const bucketlistCollection = db.collection('bucketlist');
+    const bucketlistCollection = db.collection('list');
     const bucketlistRouter = createRouter(bucketlistCollection);
     app.use('/api/bucketlist', bucketlistRouter);
   })
