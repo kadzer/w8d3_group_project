@@ -1,5 +1,5 @@
 const FormView = require('./views/form_view.js');
-const GridView = require('./views/form_view.js');
+const GridView = require('./views/grid_view.js');
 const BucketList = require('./models/bucket_list.js');
 
 document.addEventListener('DOMContentLoaded', () => {
