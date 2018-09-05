@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const bucketListContainer = document.querySelector('div#bucket-list-item');
   const bucketlistGridView = new GridView(bucketListContainer);
-  BucketListGridView.bindEvents();
+  bucketListGridView.bindEvents();
 
   const bucketList = new BucketList();
   bucketList.bindEvents();
