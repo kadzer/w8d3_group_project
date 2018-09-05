@@ -1,18 +1,18 @@
 // const PubSub = require('../helpers/pub_sub.js');
 
 const ItemView = function (container) {
-  this.container;
+  this.container = container;
 };
 
 ItemView.prototype.render = function (item) {
   const itemContainer = document.createElement('div');
   itemContainer.id = 'item';
-
   const name = this.createHeading(item.name);
   itemContainer.appendChild(name);
 
   const description = this.createDetail('Description', item.description);
   itemContainer.appendChild(description);
+  this.container.appendChild(itemContainer);
 };
 
 ItemView.prototype.createHeading = function (textContent) {

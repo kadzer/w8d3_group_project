@@ -7,7 +7,7 @@ const GridView = function (container) {
 
 GridView.prototype.bindEvents = function () {
   PubSub.subscribe('BucketList:data-loaded', (event) => {
-    this.render(event.detial);
+    this.render(event.detail);
   });
 };
 
