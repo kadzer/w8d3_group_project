@@ -19,4 +19,4 @@ GridView.prototype.render = function (items) {
   });
 };
 
-module.expmorts = GridView;
+module.exports = GridView;
