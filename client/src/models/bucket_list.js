@@ -12,7 +12,7 @@ BucketList.prototype.bindEvents = function () {
   // });
 
   PubSub.subscribe('FormView:item-submitted', (evt) => {
-    this.postBucketListItem(evt.detail);
+    this.postListItem(evt.detail);
   })
 };
 
