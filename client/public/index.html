@@ -12,17 +12,23 @@
 <body>
   <div class="main-container">
     <h1>Bucket List</h1>
-    <h3>Add a bucket list item</h3>
-    <form id="bucket-list">
+    <div class="wrapper">
+      <h3>Add a bucket list item</h3>
+      <form id="bucket-list">
 
-      <label for="name">Name:</label>
-      <input type="text" id="name"/>
+        <label for="name">Name:</label>
+        <input type="text" id="name"/>
 
-      <label for="desicrption">Description:</label>
-      <input type="text" id="desicrption"/>
+        <label for="desicrption">Description:</label>
+        <input type="text" id="desicrption"/>
 
-      <input type="submit" value="Save" id="save"/>
-    </form>
+        <input type="submit" value="Save" id="save"/>
+      </form>
+      <div>
+        <h2>Bucket List Items</h2>
+        <div id="bucket-list-item"></div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
